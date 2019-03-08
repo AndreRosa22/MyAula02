@@ -29,6 +29,9 @@ namespace ValoresEspeciais
             float s = float.NegativeInfinity;
             float t = float.PositiveInfinity;
             float u = float.NaN;
+            int v = short.MaxValue;
+            float f1, f2;
+            f1 = f2 = 10000.0f;
 
             Console.WriteLine("Minimo de int "+ a);
             Console.WriteLine("Máximo de int " + b);
@@ -50,7 +53,9 @@ namespace ValoresEspeciais
             Console.WriteLine("Infinito positivo de double " + r);
             Console.WriteLine("Infinito negativo de float " + s);
             Console.WriteLine("Infinito positivo de float " + t);
+            Console.WriteLine((short) (v + 1));
             Console.WriteLine("Não é númmero -> " + u);
+            Console.WriteLine(f1 == f2 + 0.0001f);
             Console.WriteLine();
             Console.WriteLine("Prime ENTER para sair");
             Console.ReadKey();
