@@ -6,6 +6,7 @@ namespace ValoresEspeciais
     {
         static void Main(string[] args)
         {
+            Console.WriteLine();
             Console.WriteLine("Prime ENTER sair");
             Console.ReadKey();
         }
