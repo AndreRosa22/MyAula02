@@ -33,7 +33,7 @@ namespace ValoresEspeciais
             float f1, f2;
             f1 = f2 = 10000.0f;
             int w = 22, x = 6, y, z1 = 3, z2 = 9, z3;
-            y = ++w + ++x;
+            y = w++ + x++;
             z3 = --z1 + --z2;
 
             Console.WriteLine("Minimo de int " + a);
@@ -61,7 +61,7 @@ namespace ValoresEspeciais
             Console.WriteLine(f1 == f2 + 0.0001f);
             Console.WriteLine("w = " + w);
             Console.WriteLine("x= " + x);
-            Console.WriteLine("y = w + x = " + y);
+            Console.WriteLine("y = w + x = " + y);//Resultado é 28 mas é o esperado! sufixos fazem as contas todas primeiro e incrementos depois!
             Console.WriteLine("z1= " + z1);
             Console.WriteLine("z2= " + z2);
             Console.WriteLine("z3 = z1 + z2 = " + z3);
