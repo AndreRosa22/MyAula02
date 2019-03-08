@@ -32,8 +32,11 @@ namespace ValoresEspeciais
             int v = short.MaxValue;
             float f1, f2;
             f1 = f2 = 10000.0f;
+            int w = 22, x = 6, y, z1 = 3, z2 = 9, z3;
+            y = ++w + ++x;
+            z3 = --z1 + --z2;
 
-            Console.WriteLine("Minimo de int "+ a);
+            Console.WriteLine("Minimo de int " + a);
             Console.WriteLine("Máximo de int " + b);
             Console.WriteLine("Minimo de double " + c);
             Console.WriteLine("Máximo de double " + d);
@@ -53,12 +56,19 @@ namespace ValoresEspeciais
             Console.WriteLine("Infinito positivo de double " + r);
             Console.WriteLine("Infinito negativo de float " + s);
             Console.WriteLine("Infinito positivo de float " + t);
-            Console.WriteLine((short) (v + 1));
+            Console.WriteLine((short)(v + 1));
             Console.WriteLine("Não é númmero -> " + u);
             Console.WriteLine(f1 == f2 + 0.0001f);
+            Console.WriteLine("w = " + w);
+            Console.WriteLine("x= " + x);
+            Console.WriteLine("y = w + x = " + y);
+            Console.WriteLine("z1= " + z1);
+            Console.WriteLine("z2= " + z2);
+            Console.WriteLine("z3 = z1 + z2 = " + z3);
             Console.WriteLine();
             Console.WriteLine("Prime ENTER para sair");
             Console.ReadKey();
         }
     }
 }
+
