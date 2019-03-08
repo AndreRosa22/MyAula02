@@ -13,7 +13,7 @@ namespace VariasStrings
             int x = 54;
             int y = 15;
             string a = "Sou uma String Normal";//Exercicio 1
-            string b = @"String Verbatin(literal): ""C:\Users\Andre\Desktop""";//Exercicio 1
+            string b = @"String Verbatin(literal): ""C:\Users\Andre\Desktop"" ";//Exercicio 1
             string c = "Unicode - \u00D8";//Exercicio 1
             string d = "Outra string normal \t com um tab e uma barra \\";//Exercicio 1
             string e = @"Outra string verbatin \u001B";//Exercicio 1
@@ -25,6 +25,7 @@ namespace VariasStrings
             string i = string.Format("{0} mais {1}",54, 15) + $" e' {54+15} ";//Exercicio 2
 
             Console.WriteLine(a);
+            Console.WriteLine(b);
             Console.WriteLine(c);
             Console.WriteLine(d);
             Console.WriteLine(e);
@@ -38,7 +39,7 @@ namespace VariasStrings
             Console.WriteLine($"{ii:x}");//Exercicio 3
             Console.WriteLine($"{ii:c}");//Exercicio 3
             Console.WriteLine();
-            Console.WriteLine("Prime ENTER para continuar");
+            Console.WriteLine("Prime ENTER para sair");
             Console.ReadKey();
         }
     }
